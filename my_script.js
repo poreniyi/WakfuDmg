@@ -48,6 +48,12 @@ let selectorDirection=document.querySelector("#Direction");
 let directionValue= selectorDirection[selectorDirection.selectedIndex].value;
 directionMultiplier=Number(directionValue);
 
+let selectorBlock=document.querySelector("#block");
+let block=Number(selectorBlock[selectorBlock.selectedIndex].value);
+
+
+let selectorFecaBlock=document.querySelector("#fecablock");
+let fecablock=Number(selectorBlock[selectorFecaBlock.selectedIndex].value);
 
 //sumofMasteries
 sumOfMasteries=typeMastery+rangeMastery+critMastery+rearMastery+elementalMastery+beserkMastery;
@@ -67,7 +73,7 @@ let barrier=0;
 let selectorRes=document.querySelector("#res");
 targetRes=1-(Number(selectorRes[selectorRes.selectedIndex].value)/100);
 console.log(targetRes);
-let reduction= targetRes-barrier;
+
 
 
 let finalDmgNumber=finalDmgBeforeRes*targetRes;
