@@ -33,13 +33,7 @@ let reduction= targetRes-barrier;
 
 let finalDmgNumber=finalDmgBeforeRes-reduction;
 
-const calculateDmg=function() {
-    getValues();
-    finalDmg.textContent="Final Damage: "+finalDmgBeforeRes;
-    console.log("this is final dmg: " +finalDmgBeforeRes);
-}
-
-const getValues=function(){
+const setValues=function(){
 //base
 baseDmg=Number(spellDmg.value);
 elementalMastery=Number(eleMast.value);
@@ -48,7 +42,6 @@ rangeMastery=Number(rangeMast.value);
 critMastery=Number(critMast.value);
 rearMastery=Number(rearMast.value);
 beserkMastery=Number(beserkDmg.value);
-
 
 //Crit
 let selectorCrit=document.querySelector("#Crit");
@@ -71,13 +64,13 @@ sumOfMasteries=1+sumOfMasteries/100;
 //dmg
 finalDmgBeforeRes=baseDmg*sumOfMasteries*sumofDmgInflicted*directionMultiplier*critMultiplier*block;
 
+finalDmg.textContent="Final Damage: "+finalDmgBeforeRes;
 }
 
 let astring=`base ${baseDmg} sumofDmgInflicted ${sumofDmgInflicted} sumofMasteries${sumOfMasteries} direction${directionMultiplier} crit${critMultiplier}
  block ${block}`;
 
 button.addEventListener('click', ()=>{
-   calculateDmg();
+   setValues();
    console.log(astring);
 });
-console.log(finalDmg.textContent);
