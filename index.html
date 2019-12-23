@@ -11,28 +11,36 @@
 </head>
 
 <body>
-    <p>For 1.66</p>
-    <p>Spell dmg
-            <input type='text' id="spellDmg">
-    </p>
-    <p>Spell Elemental Mastery
-            <input type='text' id="eleMast">
-    </p>
-    <p>ST Mastery/Aoe
-            <input type='text' id="typeMast">
-    </p>
-    <p>Melee/Dist
-            <input type='text' id="rangeMast">
-    </p>
-    <p>Crit Mast
-            <input type='text' id="critMast">
-    </p>
-    <p>RearMast
-            <input type='text' id="rearMast">
-    </p>
-    <p>BeserkMast
-            <input type='text' id="BeserkMast">
-    </p>
+    <p>For 1.66 </p>
+    <p>DISCLAIMER: THIS DOES NOT WORK FOR HUPPER or any spells with different crit number Also Some features might not work on firefox</p>
+    <div id="Masteries">
+        <p>Spell dmg
+                <input type='number' min= "0" id="spellDmg">
+        </p>
+        <p>Spell Elemental Mastery
+                <input type='text' id="eleMast">
+        </p>
+        <p>ST Mastery/Aoe
+                <input type='text' id="typeMast">
+        </p>
+        <p>Melee/Dist
+                <input type='text' id="rangeMast">
+        </p>
+        <p>Crit Mast
+                <input type='text' id="critMast">
+        </p>
+        <p>RearMast
+                <input type='text' id="rearMast">
+        </p>
+        <p>BeserkMast
+                <input type='text' id="BeserkMast">
+        </p>
+        <p>Dmg Inflicted
+                <input type='text' id="dmgInflicted">
+        </p>
+    </div>
+
+
     <!-- <span>Select your class</span>
     <select name="class" id="classSelect">
         <option value="IOP">Iop</option>
@@ -54,10 +62,21 @@
         <option value="IOP">Eliotrope</option>
         <option value="IOP">Huppermage</option>
     </select> -->
-    <p id='Finaldmg'>Final dmg
+    <div autocomplete="off" id="Selects">
+            <select id="Direction">
+                <option value= "1" selected="selected" id='Front'>Front</option>
+                <option value="1.25" id='Rear'>Rear</option>
+                <option value="1.1"id='Side'>Side</option>
+            </select>
+            <select id="Crit">        
+                    <option value="1" selected>Non-Critcal Hit</option>
+                    <option value="1.25">Critcal Hit</option>
+            </select>
+    </div>
+    <button id="btn">Calculate Final Dmg</button>
+    <p id='Finaldmg'>
       
     </p>
-
   <script src="my_script.js"></script>
 </body>
 </html>
