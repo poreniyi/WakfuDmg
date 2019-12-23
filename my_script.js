@@ -7,6 +7,7 @@ const spellDmg=document.querySelector('#spellDmg');
 const beserkDmg=document.querySelector("#BeserkMast");
 const finalDmg=document.querySelector("#Finaldmg");
 const dmgInflicted=document.querySelector("#dmgInflicted");
+const afterResText=document.querySelector("#dmgAfterRes");
 const button=document.querySelector('#btn');
 
 finalDmg.textContent="Final Damage: ";
@@ -26,12 +27,6 @@ let critMultiplier=1;
 let block=1;
 let finalDmgBeforeRes=0;
 
-//res 
-let targetRes=0;
-let barrier=0;
-let reduction= targetRes-barrier;
-
-let finalDmgNumber=finalDmgBeforeRes-reduction;
 
 const setValues=function(){
 //base
@@ -57,20 +52,31 @@ directionMultiplier=Number(directionValue);
 //sumofMasteries
 sumOfMasteries=typeMastery+rangeMastery+critMastery+rearMastery+elementalMastery+beserkMastery;
 sumofDmgInflicted=Number(dmgInflicted.value);
-console.log("This is all Masteries: "+sumOfMasteries);
+
 
 //calculations here
 sumOfMasteries=1+sumOfMasteries/100;
 //dmg
 finalDmgBeforeRes=baseDmg*sumOfMasteries*sumofDmgInflicted*directionMultiplier*critMultiplier*block;
 
+
+//res 
+let targetRes=0;
+let barrier=0;
+
+let selectorRes=document.querySelector("#res");
+targetRes=1-(Number(selectorRes[selectorRes.selectedIndex].value)/100);
+console.log(targetRes);
+let reduction= targetRes-barrier;
+
+
+let finalDmgNumber=finalDmgBeforeRes*targetRes;
+
 finalDmg.textContent="Final Damage: "+finalDmgBeforeRes;
+afterResText.textContent="Final Damage after res: "+finalDmgNumber;
 }
 
-let astring=`base ${baseDmg} sumofDmgInflicted ${sumofDmgInflicted} sumofMasteries${sumOfMasteries} direction${directionMultiplier} crit${critMultiplier}
- block ${block}`;
 
 button.addEventListener('click', ()=>{
    setValues();
-   console.log(astring);
 });
