@@ -53,7 +53,7 @@ let block=Number(selectorBlock[selectorBlock.selectedIndex].value);
 
 
 let selectorFecaBlock=document.querySelector("#fecablock");
-let fecablock=Number(selectorBlock[selectorFecaBlock.selectedIndex].value);
+//let fecablock=Number(selectorBlock[selectorFecaBlock.selectedIndex].value);
 
 //sumofMasteries
 sumOfMasteries=typeMastery+rangeMastery+critMastery+rearMastery+elementalMastery+beserkMastery;
