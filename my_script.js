@@ -53,13 +53,27 @@ directionMultiplier=Number(directionValue);
 if(directionMultiplier!=1.25){
    rearMastery=0;
 }
-
+let fecablock=1;
 let selectorBlock=document.querySelector("#block");
 let block=Number(selectorBlock[selectorBlock.selectedIndex].value);
-
-
-let selectorFecaBlock=document.querySelector("#fecablock");
-//let fecablock=Number(selectorBlock[selectorFecaBlock.selectedIndex].value);
+switch (block){
+   case 1:
+      block=1;
+      fecablock=1;
+    break;
+   case .8:
+      block=.8;
+      fecablock=1;
+      break;
+   case .9:
+      block=.8;
+      fecablock=.9;
+      break;
+   case .85:
+      block=.8;
+      fecablock=.85;
+      break;   
+}
 
 //sumofMasteries
 sumOfMasteries=typeMastery+rangeMastery+critMastery+rearMastery+elementalMastery+beserkMastery;
@@ -69,7 +83,7 @@ sumofDmgInflicted=Number(dmgInflicted.value);
 //calculations here
 sumOfMasteries=1+sumOfMasteries/100;
 //dmg
-finalDmgBeforeRes=baseDmg*sumOfMasteries*sumofDmgInflicted*directionMultiplier*critMultiplier*block;
+finalDmgBeforeRes=baseDmg*sumOfMasteries*sumofDmgInflicted*directionMultiplier*critMultiplier*block*fecablock;
 
 
 //res 
@@ -78,7 +92,6 @@ let barrier=0;
 
 let selectorRes=document.querySelector("#res");
 targetRes=1-(Number(selectorRes[selectorRes.selectedIndex].value)/100);
-console.log(targetRes);
 
 
 
