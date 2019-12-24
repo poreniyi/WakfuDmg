@@ -42,11 +42,17 @@ beserkMastery=Number(beserkDmg.value);
 let selectorCrit=document.querySelector("#Crit");
 let critValue=selectorCrit[selectorCrit.selectedIndex].value;
 critMultiplier=Number(critValue);
+if(critMultiplier==1){
+   critMastery=0;
+}
 
 //Direction
 let selectorDirection=document.querySelector("#Direction");
 let directionValue= selectorDirection[selectorDirection.selectedIndex].value;
 directionMultiplier=Number(directionValue);
+if(directionMultiplier!=1.25){
+   rearMastery=0;
+}
 
 let selectorBlock=document.querySelector("#block");
 let block=Number(selectorBlock[selectorBlock.selectedIndex].value);
