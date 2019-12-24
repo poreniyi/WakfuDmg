@@ -103,5 +103,14 @@ afterResText.textContent="Final Damage after res: "+finalDmgNumber;
 
 
 button.addEventListener('click', ()=>{
-   setValues();
+   //setInterval(setValues(),200);
 });
+setInterval(setValues(),200);
+setInterval(setValues(),1000);
+setInterval(() => {
+   console.log(1)
+}, 1000);
+
+setInterval(() => {
+  setValues();
+}, 1000);
