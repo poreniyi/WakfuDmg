@@ -1,1 +1,1 @@
-for calculating damage done
+For calculating the value of damage,armor,or heal with 1 spell.
