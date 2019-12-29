@@ -115,9 +115,6 @@ armorText.textContent="Armor is:"+armor;
 }
 
 
-button.addEventListener('click', ()=>{
-   //setInterval(setValues(),200);
-});
 
 
 setInterval(() => {
