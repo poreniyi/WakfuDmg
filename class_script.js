@@ -6,7 +6,7 @@ let spellLow=0;
 slider.oninput=function(){
     //sliderOutput.textContent=this.value;
     sliderOutput.textContent=this.value+"Dmg:"+sliderFunction(spellLow,spellHigh,this.value);
-    //spellDmgs.value=sliderFunction(2,57,this.value);
+    spellDmgs.value=sliderFunction(2,57,this.value);
 }
 
 let classSelect=document.querySelector("#classSelect");
