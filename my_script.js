@@ -8,6 +8,8 @@ const beserkDmg=document.querySelector("#BeserkMast");
 const finalDmg=document.querySelector("#Finaldmg");
 const dmgInflicted=document.querySelector("#dmgInflicted");
 const afterResText=document.querySelector("#dmgAfterRes");
+const healText=document.querySelector("#healP");
+const armorText=document.querySelector("#armorP");
 const button=document.querySelector('#btn');
 
 finalDmg.textContent="Final Damage: ";
@@ -50,7 +52,7 @@ if(critMultiplier==1){
 let selectorDirection=document.querySelector("#Direction");
 let directionValue= selectorDirection[selectorDirection.selectedIndex].value;
 directionMultiplier=Number(directionValue);
-if(directionMultiplier!=1.25){
+if(directionMultiplier!=1.25|| directionMultiplier==1.1){
    rearMastery=0;
 }
 let fecablock=1;
@@ -77,14 +79,22 @@ switch (block){
 
 //sumofMasteries
 sumOfMasteries=typeMastery+rangeMastery+critMastery+rearMastery+elementalMastery+beserkMastery;
-sumofDmgInflicted=Number(dmgInflicted.value);
-
+sumofDmgInflicted=Number(dmgInflicted.value)/100;
+sumOfMasteries=1+sumOfMasteries/100;
+let healSumOfMasteries=typeMastery+rangeMastery+critMastery+elementalMastery+beserkMastery;
+healSumOfMasteries=1+healSumOfMasteries/100;
+let armorSumOfMasteries=1+typeMastery+rangeMastery+elementalMastery;
 
 //calculations here
-sumOfMasteries=1+sumOfMasteries/100;
+
+
 //dmg
 finalDmgBeforeRes=baseDmg*sumOfMasteries*sumofDmgInflicted*directionMultiplier*critMultiplier*block*fecablock;
+//armor
+let armor=sumOfMasteries*baseDmg;
+//heal
 
+let heal= healSumOfMasteries*baseDmg*critMultiplier*sumofDmgInflicted;
 
 //res 
 let targetRes=0;
@@ -99,17 +109,16 @@ let finalDmgNumber=finalDmgBeforeRes*targetRes;
 
 finalDmg.textContent="Final Damage: "+finalDmgBeforeRes;
 afterResText.textContent="Final Damage after res: "+finalDmgNumber;
+healText.textContent="Heal is:"+heal;
+armorText.textContent="Armor is:"+armor;
+
 }
 
 
 button.addEventListener('click', ()=>{
    //setInterval(setValues(),200);
 });
-setInterval(setValues(),200);
-setInterval(setValues(),1000);
-setInterval(() => {
-   console.log(1)
-}, 1000);
+
 
 setInterval(() => {
   setValues();

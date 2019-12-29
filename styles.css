@@ -2,10 +2,8 @@ body{
     background-color: lightblue;
 }
 #sliderdiv{
-    display: float;
-    float: right;
+ 
 }
 #slider{
-    display: float;
-    float: bottom;
+ width:500px;
 }

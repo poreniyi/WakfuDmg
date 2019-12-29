@@ -1,0 +1,177 @@
+{
+    "IOP": [
+        {
+            "Spell name": "Thunderbolt",
+            "Dmg at lvl 1": "3",
+            "dmg at 200": "74"
+        },
+        {
+            "Spell name": "Celestial Sword",
+            "Dmg at lvl 1": "2",
+            "dmg at 200": "54"
+        },
+        {
+            "Spell name": "Super Iop Punch",
+            "Dmg at lvl 1": "86",
+            "dmg at 200": "108"
+        },
+        {
+            "Spell name": "Sword of Judgement",
+            "Dmg at lvl 1": "4",
+            "dmg at 200": "107"
+        },
+        {
+            "Spell name": "Iop's Wrath",
+            "Dmg at lvl 1": "7",
+            "dmg at 200": "174"
+        },
+        {
+            "Spell name": "Shaker",
+            "Dmg at lvl 1": "2",
+            "dmg at 200": "57"
+        },
+        {
+            "Spell name": "Rocknoceros",
+            "Dmg at lvl 1": "4",
+            "dmg at 200": "99"
+        },
+        {
+            "Spell name": "Impact",
+            "Dmg at lvl 1": "3",
+            "dmg at 200": "86"
+        },
+        {
+            "Spell name": "Charge",
+            "Dmg at lvl 1": "3",
+            "dmg at 200": "74"
+        },
+        {
+            "Spell name": "Devestate",
+            "Dmg at lvl 1": "5",
+            "dmg at 200": "114"
+        },
+        {
+            "Spell name": "Jabs",
+            "Dmg at lvl 1": "3",
+            "dmg at 200": "80"
+        },
+        {
+            "Spell name": "Flurry",
+            "Dmg at lvl 1": "1",
+            "dmg at 200": "26"
+        },
+        {
+            "Spell name": "Wallop",
+            "Dmg at lvl 1": "2",
+            "dmg at 200": "53"
+        },
+        {
+            "Spell name": "Gutting Gust",
+            "Dmg at lvl 1": "1",
+            "dmg at 200": "20"
+        },
+        {
+            "Spell name": "Uppercut",
+            "Dmg at lvl 1": "1",
+            "dmg at 200": "52"
+        }
+    ],
+    "PANDA": [
+        {
+            "Spell name": "Milky Breath",
+            "Dmg at lvl 1": "2",
+            "dmg at 200": "53",
+            "Heal at1": "8",
+            "Heal at 200": "55",
+            "Element": "w"
+        },
+        {
+            "Spell name": "Splash of MIlk",
+            "Dmg at lvl 1": "4",
+            "dmg at 200": "107",
+            "Element": "w"
+        },
+        {
+            "Spell name": "Bubble Trouble",
+            "Dmg at lvl 1": "0",
+            "dmg at 200": "0",
+            "Heal at1": "6",
+            "Heal at 200": "41",
+            "Element": "w"
+        },
+        {
+            "Spell name": "Milk Wave",
+            "Dmg at lvl 1": "8",
+            "dmg at 200": "214",
+            "Heal at1": "12",
+            "Heal at 200": "83",
+            "Element": "w"
+        },
+        {
+            "Spell name": "Milk Fountain",
+            "Dmg at lvl 1": "5",
+            "dmg at 200": "114",
+            "Element": "w"
+        },
+        {
+            "Spell name": "Flaming Burp",
+            "Dmg at lvl 1": "2",
+            "dmg at 200": "62",
+            "Element": "f"
+        },
+        {
+            "Spell name": "Light my Fire",
+            "Dmg at lvl 1": "3",
+            "dmg at 200": "80",
+            "Element": "f"
+        },
+        {
+            "Spell name": "Dairy Springer\n",
+            "Dmg at lvl 1": "2",
+            "dmg at 200": "53",
+            "Element": "f"
+        },
+        {
+            "Spell name": "Explosive Flask",
+            "Dmg at lvl 1": "4",
+            "dmg at 200": "91",
+            "Element": "f"
+        },
+        {
+            "Spell name": "Milking It",
+            "Dmg at lvl 1": "5",
+            "dmg at 200": "109",
+            "Element": "f"
+        },
+        {
+            "Spell name": "Tripple Whammy",
+            "Dmg at lvl 1": "2",
+            "dmg at 200": "53",
+            "Element": "e"
+        },
+        {
+            "Spell name": "Six Roses",
+            "Dmg at lvl 1": "4",
+            "dmg at 200": "107",
+            "Element": "e"
+        },
+        {
+            "Spell name": "Bash Barrel",
+            "Dmg at lvl 1": "2",
+            "dmg at 200": "49",
+            "Element": "e"
+        },
+        {
+            "Spell name": "Lactic Acid",
+            "Dmg at lvl 1": "4",
+            "dmg at 200": "91",
+            "Element": "e"
+        },
+        {
+            "Spell name": "Blisskrieg",
+            "Dmg at lvl 1": "7",
+            "dmg at 200": "146",
+            "Element": "e"
+        }
+    ]
+}

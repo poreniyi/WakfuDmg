@@ -12,12 +12,44 @@
 
 <body>
     <p>For 1.66 </p>
-    <p>DISCLAIMER: THIS DOES NOT WORK FOR Some HUPPER or any spells with different crit number <br>
-        Use tab
+    <p>DISCLAIMER: THIS DOES NOT WORK FOR SOME HUPPER or any spells with different crit number <br>
+        If spell has a diff base dmg  put that base dmg number in spell dmg<br>
+        Use tab<br>
+        Choose the mastery that the spell uses <br>don't add aoe+st or dist+melee together choose 1
     </p>
+
+    <span>Select your class</span>
+    <select name="class" id="classSelect">
+        <option value="-1">None</option>
+        <option value="IOP">Iop </option>
+        <option value="1">Feca</option>
+        <option value="2">Osamodas</option>
+        <option value="3">Enutrof</option>
+        <option value="4">Sram</option>
+        <option value="5">Xelor</option>
+        <option value="6">Ecaflip</option>
+        <option value="7">Enirispa</option>
+        <option value="8">Cra</option>
+        <option value="9">Sadida</option>
+        <option value="10">Sacrier</option>
+        <option value="11">PANDA</option>
+        <option value="12">Rouge</option>
+        <option value="13">Masqueraider</option>
+        <option value="14">Ouginak</option>
+        <option value="15">Foggernaut</option>
+        <option value="16">Eliotrope</option>
+        <option value="17">Huppermage</option>
+    </select>
+    <select id="elementSelect">
+         
+    </select>
+    <select id="spells">
+        <option value='-1'>None</option>
+    </select>
     <div id="sliderdiv">
-        <input id="slider" type="range" min="1" max="100" step="1" value ="1">
+        <input id="slider" type="range" min="1" max="200" step="1" value ="1" >
        <p>Spell lvl:<span id="sliderValue"></span></p>
+       Spell Dmg numbers may be off by 1.
     </div>
     <div id="Masteries">
         <p>Spell dmg
@@ -42,32 +74,11 @@
                 <input type='text' id="BeserkMast" pattern="\d*" maxlength="4" size=2>
         </p>
         <p>Dmg Inflicted
-                <input value='1' type='text' id="dmgInflicted" pattern="\d*" maxlength="4" size=2>% 
+                <input value='100' type='text' id="dmgInflicted" pattern="\d*" maxlength="3" size=2>% 
         </p>
     </div>
 
 
-    <!-- <span>Select your class</span>
-    <select name="class" id="classSelect">
-        <option value="IOP">Iop</option>
-        <option value="IOP">Feca</option>
-        <option value="IOP">Osamodas</option>
-        <option value="IOP">Enutrof</option>
-        <option value="IOP">Sram</option>
-        <option value="IOP">Xelor</option>
-        <option value="IOP">Ecaflip</option>
-        <option value="IOP">Enirispa</option>
-        <option value="IOP">Cra</option>
-        <option value="IOP">Sadida</option>
-        <option value="IOP">Sacrier</option>
-        <option value="IOP">Pandawa</option>
-        <option value="IOP">Rouge</option>
-        <option value="IOP">Masqyeraider</option>
-        <option value="IOP">Ouginak</option>
-        <option value="IOP">Foggernaut</option>
-        <option value="IOP">Eliotrope</option>
-        <option value="IOP">Huppermage</option>
-    </select> -->
     <div autocomplete="off" id="Selects">
             <select id="Direction">
                 <option value= "1" selected="selected" id='Front'>Front</option>
@@ -106,6 +117,13 @@
     <p id='dmgAfterRes'>
             
     </p>
+    <p id='healP'>
+        Heal:
+    </p>
+    <p id='armorP'>
+        Armor:
+    </p>
+
     <div>
             <img src="formula.PNG">
     </div>
