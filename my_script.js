@@ -90,6 +90,7 @@ let armorSumOfMasteries=1+typeMastery+rangeMastery+elementalMastery;
 
 //dmg
 finalDmgBeforeRes=baseDmg*sumOfMasteries*sumofDmgInflicted*directionMultiplier*critMultiplier*block*fecablock;
+finalDmgBeforeRes=Math.round(finalDmgBeforeRes);
 //armor
 let armor=sumOfMasteries*baseDmg;
 //heal
@@ -106,6 +107,7 @@ targetRes=1-(Number(selectorRes[selectorRes.selectedIndex].value)/100);
 
 
 let finalDmgNumber=finalDmgBeforeRes*targetRes;
+finalDmgNumber=Math.round(finalDmgNumber);
 
 finalDmg.textContent="Final Damage: "+finalDmgBeforeRes;
 afterResText.textContent="Final Damage after res: "+finalDmgNumber;
