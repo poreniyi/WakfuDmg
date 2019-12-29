@@ -95,14 +95,18 @@ spellSelect.addEventListener('change', ()=>{
 })
 const sliderFunction=function(highDmg,lowDmg,value){
    let range= highDmg-lowDmg;
-  let dmgInterval= range/200;
+  let dmgInterval= range/199;//200
   if(value==1){
       return lowDmg;
   }
   if(value==200){
       return highDmg;
   }
+  let value2=value-1
   let step1=value*dmgInterval;
+  let step2=value2*dmgInterval;
+  return Math.round(lowDmg+step2);
+
     return Math.round(lowDmg+step1);
 }
 
